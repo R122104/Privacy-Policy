@@ -1,188 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SmartSleep - Privacy Policy</title>
-    <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f5f5f5;
-        }
-
-        .container {
-            background-color: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h1 {
-            color: #6B5CE7;
-            border-bottom: 3px solid #4ECDC4;
-            padding-bottom: 10px;
-        }
-
-        h2 {
-            color: #6B5CE7;
-            margin-top: 30px;
-        }
-
-        .update-date {
-            color: #666;
-            font-style: italic;
-            margin-bottom: 30px;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 8px;
-        }
-
-        .highlight {
-            background-color: #f0f0f0;
-            padding: 15px;
-            border-left: 4px solid #4ECDC4;
-            margin: 20px 0;
-        }
-
-        .contact {
-            background-color: #f9f9f9;
-            padding: 20px;
-            border-radius: 5px;
-            margin-top: 30px;
-        }
-    </style>
-</head>
-
-<body>
-    <div class="container">
-        <h1>SmartSleep Privacy Policy</h1>
-        <p class="update-date">Last Updated: January 4, 2026</p>
-
-        <h2>1. Introduction</h2>
-        <p>SmartSleep ("the App") is an Apple Watch-exclusive sleep tracking and smart alarm application. This Privacy
-            Policy explains what information the App collects and how it is used.</p>
-
-        <div class="highlight">
-            <strong>Key Point:</strong> SmartSleep stores all collected data locally on your device. No data is
-            transmitted to the cloud or any server.
-        </div>
-
-        <h2>2. Information We Collect</h2>
-        <p>The App collects the following health data through Apple's HealthKit:</p>
-        <ul>
-            <li><strong>Heart Rate Data</strong> - Monitors your heart rate during sleep to estimate sleep stages</li>
-            <li><strong>Heart Rate Variability (HRV) Data</strong> - Used to assess sleep quality and distinguish
-                between deep and light sleep</li>
-            <li><strong>Motion Sensor Data</strong> - Detects body movement to determine sleep onset, wake times, and
-                sleep stages</li>
-            <li><strong>Sleep Data</strong> - Records sleep sessions (start time, end time, total sleep duration, etc.)
-            </li>
-        </ul>
-
-        <h2>3. How We Use Your Data</h2>
-        <p>Collected data is used solely for the following purposes:</p>
-        <ul>
-            <li>Automatic sleep detection (detecting heart rate decrease and reduced movement)</li>
-            <li>Sleep stage estimation (identifying deep sleep, light sleep, and awake periods)</li>
-            <li>Smart alarm functionality (detecting light sleep 15 minutes before scheduled wake time for optimal
-                awakening)</li>
-            <li>Sleep score calculation (0-100 rating based on sleep duration, deep sleep percentage, awakenings, and
-                HRV)</li>
-            <li>Sleep history display (weekly/monthly charts, average scores, etc.)</li>
-            <li>Saving sleep data to HealthKit (enabling integration with other health apps)</li>
-        </ul>
-
-        <h2>4. Data Storage</h2>
-        <div class="highlight">
-            <p><strong>All data is stored locally on your device.</strong></p>
-            <ul>
-                <li>Collected data is saved within your iPhone and Apple Watch using SwiftData</li>
-                <li>No data is transmitted to external servers, cloud services, or third parties</li>
-                <li>The developer has no access to your health data or personal information</li>
-            </ul>
-        </div>
-
-        <h2>5. Data Sharing</h2>
-        <p>The App does not share your data with any third parties.</p>
-        <ul>
-            <li>No data sharing for analytics or advertising purposes</li>
-            <li>Data can only be shared with other health apps through Apple HealthKit when you explicitly choose to do
-                so</li>
-            <li>iPhone ⇔ Apple Watch data synchronization is performed locally using the WatchConnectivity framework
-            </li>
-        </ul>
-
-        <h2>6. HealthKit Usage</h2>
-        <p>The App uses Apple's HealthKit framework:</p>
-        <ul>
-            <li><strong>Read Permission:</strong> Reading heart rate, heart rate variability, and sleep analysis data
-            </li>
-            <li><strong>Write Permission:</strong> Saving sleep session data to HealthKit</li>
-            <li>HealthKit access requires your permission upon first launch</li>
-            <li>You can change or revoke permissions anytime through iOS Settings</li>
-        </ul>
-
-        <h2>7. Data Retention</h2>
-        <p>The App retains sleep data until you delete it:</p>
-        <ul>
-            <li>Sleep session data is saved until you manually delete it</li>
-            <li>Uninstalling the app will delete all local data</li>
-            <li>Data saved to HealthKit can be managed through the iOS "Health" app</li>
-        </ul>
-
-        <h2>8. Security</h2>
-        <p>We take the following measures to ensure your data security:</p>
-        <ul>
-            <li>All data is stored in iOS's encrypted storage</li>
-            <li>No network communication (zero risk of data leakage)</li>
-            <li>Apple Watch synchronization uses the secure WatchConnectivity framework</li>
-        </ul>
-
-        <h2>9. Your Rights</h2>
-        <p>You have the following rights:</p>
-        <ul>
-            <li><strong>Access:</strong> View your sleep data anytime within the app</li>
-            <li><strong>Deletion:</strong> Delete sleep session data individually</li>
-            <li><strong>Data Portability:</strong> Export data to other apps through HealthKit</li>
-            <li><strong>Opt-out:</strong> Revoke HealthKit access permissions anytime through iOS Settings</li>
-        </ul>
-
-        <h2>10. Third-Party Services</h2>
-        <p>The App uses no third-party services except:</p>
-        <ul>
-            <li><strong>Apple HealthKit:</strong> Apple's official healthcare framework (compliant with Apple's Privacy
-                Policy)</li>
-        </ul>
-        <p>No third-party SDKs such as analytics tools, ad networks, or crash reporting services are used.</p>
-
-        <h2>11. Children's Privacy</h2>
-        <p>The App is not intended for children under 13. We do not knowingly collect personal information from children
-            under 13.</p>
-
-        <h2>12. Changes to This Privacy Policy</h2>
-        <p>This Privacy Policy may be updated as necessary. Significant changes will be communicated through in-app
-            notifications or update notes.</p>
-
-        <h2>13. Governing Law</h2>
-        <p>This Privacy Policy shall be governed by and construed in accordance with the laws of Japan.</p>
-
-        <hr style="margin: 40px 0; border: none; border-top: 1px solid #ddd;">
-
-        <p style="text-align: center; color: #888; font-size: 14px;">
-            © 2026 SmartSleep. All rights reserved.
-        </p>
-    </div>
-</body>
-
-</html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SmartSleep Privacy Policy</title>
+<style>body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Helvetica Neue",sans-serif;max-width:760px;margin:40px auto;padding:0 20px;line-height:1.7;color:#222}h1{font-size:1.6em}h2{font-size:1.2em;margin-top:2em;border-bottom:1px solid #ddd;padding-bottom:.2em}a{color:#0366d6}@media(prefers-color-scheme:dark){body{background:#111;color:#ddd}a{color:#6cb6ff}h2{border-color:#333}}</style>
+</head><body>
+<p style="font-size:.9em"><a href="index.html">日本語</a> · <a href="support.html">Support</a> · <a href="terms_of_service_en.html">Terms of Use</a></p>
+<h1>SmartSleep Privacy Policy</h1>
+<p>Last updated: 2026-09-08</p>
+<h2>1. Introduction</h2>
+<p>SmartSleep ("the App") is provided by R122104 ("the Developer") for iOS and watchOS. This policy explains how information is handled in the App.</p>
+<h2>2. Information We Collect</h2>
+<ul>
+<li><strong>Advertising data</strong>: The App displays ads via Google AdMob. AdMob may collect the advertising identifier (IDFA, if permitted), device information, IP address, and ad impression/click data. You can choose whether to allow tracking in the iOS App Tracking Transparency prompt; all features of the App work if you decline.</li>
+<li><strong>Health data</strong>: The App reads sleep analysis, heart rate, and heart rate variability from HealthKit to compute your sleep score and time the smart alarm, and writes recorded data back to HealthKit. This data stays on your device and in Apple Health; it is never sent to the Developer's servers and is never used for advertising or marketing.</li>
+<li><strong>Purchase information</strong>: In-app purchases are processed by the Apple App Store. The Developer never receives payment details such as card numbers, and only checks the entitlement status on-device.</li>
+</ul>
+<h2>3. How We Use Information</h2>
+<ul>
+<li>To provide and maintain the App's features</li>
+<li>To display advertising</li>
+<li>To verify and restore purchases</li>
+<li>To respond to support requests</li>
+</ul>
+<h2>4. Third-Party Services</h2>
+<p>We do not share personal information with third parties except as required by law. The App relies on the following services to function:</p>
+<ul>
+<li>Google AdMob (advertising): <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+<li>Apple App Store (payments): <a href="https://www.apple.com/legal/privacy/">https://www.apple.com/legal/privacy/</a></li>
+</ul>
+<h2>5. Data Retention and Deletion</h2>
+<p>Data you create in the App is stored on your device. Deleting the App deletes it.</p>
+<p>Data written to HealthKit can be deleted from the Apple Health app.</p>
+<h2>6. Children's Privacy</h2>
+<p>The App is not directed to children under 13 and does not knowingly collect personal information from children under 13.</p>
+<h2>7. Disclaimer</h2>
+<p>To the extent permitted by law, the Developer is not liable for damages arising from use of the App.</p>
+<h2>8. Changes to This Policy</h2>
+<p>We may update this policy to reflect legal or feature changes. Material changes are indicated by the "Last updated" date above.</p>
+<h2>9. Contact</h2>
+<p>For questions about this policy, contact: dbys.67n@gmail.com</p>
+</body></html>
